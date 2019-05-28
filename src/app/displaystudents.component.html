@@ -1,0 +1,11 @@
+<table>
+  <tr>
+    <th>student name</th>
+    <th>student rollno</th>
+  </tr>
+  <tr *ngFor="let sd of studentdata">
+    <td>{{sd.studentname}}</td>
+    <td>{{sd.studentrollno}}</td>
+    <td><a [routerLink]="['/studentdetails',sd.studentrollno]" class="mod-here">click Here to get student data</a></td>
+  </tr>
+</table>
